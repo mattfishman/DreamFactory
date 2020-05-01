@@ -1,0 +1,48 @@
+<br><br><br><br><br><br>
+
+<div *ngIf="auth.user | async as user; else showLogin">
+  <!-- <div *ngIf="checkAuthorization(user); else notAuth"> -->
+    <h1>Hello {{ user.displayName }}!</h1>
+    <button (click)="logout()">Logout</button>
+    <div>
+      <h2>List of children in database</h2>
+      <ul>
+        <li class="text" *ngFor="let item of items | async">
+          <h3>{{item.firstname}} {{item.lastname}}</h3>
+          <h4>General information</h4>
+          Birthday: {{item.birthday}} <br>
+          Address: {{item.address}} {{item.city}} {{item.state}} {{item.zip}}
+          <h4>Parent 1: {{item.guardian1firstname}} {{item.guardian1lastname}}</h4>
+          Cell phone: {{item.guardian1cellphone}} <br>
+          Work phone: {{item.guardian1workphone}}
+          <h4>Parent 1: {{item.guardian2firstname}} {{item.guardian2lastname}}</h4>
+          Cell phone: {{item.guardian2cellphone}} <br>
+          Work phone: {{item.guardian2workphone}}
+          <h4>Siblings</h4>
+          Names: {{item.siblingname}} <br>
+          Ages: {{item.siblingage}}
+          <h4>Physician information</h4>
+          Name: {{item.physicianfirstname}} {{item.physicianlastname}} <br>
+          Illness: {{item.illness}} <br>
+          Hospital: {{item.hospital}}
+          <h4>Referrer information</h4>
+          Name: {{item.referrerfirstname}} {{item.referrerlastname}} <br>
+          Relation: {{item.referrerrelation}}
+        </li>
+      </ul>
+    </div>
+  <!-- </div> -->
+</div>
+<ng-template #showLogin>
+    <br><br><br>
+    <h2>Please login.</h2>
+    <button (click)="login()">Login with Google</button>
+
+</ng-template>
+<ng-template #notAuth>
+    <br><br><br>
+    <h2>Your account is not authorized to view this data</h2>
+    <button (click)="login()">Login with Google</button>
+</ng-template>
+
+

@@ -1,0 +1,64 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: Lato;
+  text-align: center;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+}
+
+#referralcheck {
+
+  margin-left: 10px;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#qualifications {
+  background-color: rgb(59, 211, 203);
+  padding-top: 70px;
+  padding-left:20px;
+  font-size: 20px;
+  line-height: 2.0;
+  color: white;
+}
+
+li {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#ContactLink {
+  color: white;
+}
+
+input{
+  margin-right: 10px;
+}
+
+.qual{
+  margin: 5px;
+  padding: 10px;
+  background-color:#8CD9F5
+}
+
+form{
+  background-color: #8CAAF5;
+  margin: 5px;
+  padding: 10px;
+}
+
+#childDream{
+  width: 20%;
+  height: 40%;
+}
+
+#sPhone{
+  width: 20%;
+}

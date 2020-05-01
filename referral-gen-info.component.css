@@ -1,0 +1,105 @@
+* {
+  background-color: rgba(255, 0, 0, 0.);
+  /* margin-left: 10px;
+  margin-right: 10px; */
+}
+#foreground{
+  background-color: rgba(255,255,255, 1);
+  
+}
+pre{
+  font-size: 10px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-left: 20px;
+}
+.before{
+  margin-bottom: 2px;
+  font-size: 15px;
+}
+#formTitle{
+  color: rgb(59, 211, 203);
+}
+input[type = text], input[type = value], input[type = date], input[type = tel], input[type = number], input[type = checkbox]{
+  border: rounded;
+  background-color: white;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+input[type = date]
+{
+  margin-right: 30px
+}
+input[type = checkbox]{
+  margin-left:25px;
+  margin-right: 1px;
+}
+h2{
+  padding-top: 120px;
+  padding-left: 20px;
+  font-size: 35px;
+  color:rgb(59, 211, 203);
+
+}
+.names{
+  padding-left: 20px;
+  color: black;
+}
+#name{
+  color: black;
+}
+#countries{
+  color: black;
+  margin-left: 20px;
+}
+#birthday{
+  padding-left: 1px;
+  color: black;
+}
+#address{
+  padding-left: 20px;
+  color: black
+}
+#p1{
+  padding-left: 20px;
+  color: black
+}
+#p2{
+  padding-left: 20px;
+  color: black
+}
+.condition{
+  padding-left: 20px;
+  color: black
+}
+#conditions{
+  color: black
+}
+#dream{
+  padding-left: 20px;
+  color: black
+}
+/* #referrer{
+  padding-left: 20px;
+  color: black
+} */
+#physician{
+  padding-left: 20px;
+  color: black
+}
+#social{
+  padding-left: 20px;
+  color: black
+}
+#countries{
+  padding-left: 20px;
+  color: black
+}
+::placeholder {
+  color: gray
+}
+#button{
+  padding-left: 20px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
